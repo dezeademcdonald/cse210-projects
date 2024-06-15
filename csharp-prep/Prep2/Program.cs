@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("Hello Prep2 World!");
         Console.WriteLine();
-
+        // Pre 2 assignment starts here
         Console.Write("What is your grade percentages? ");
         string userInput = Console.ReadLine();
         int grade = int.Parse(userInput);

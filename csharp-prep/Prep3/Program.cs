@@ -5,9 +5,34 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello Prep3 World!");
-        for (int i = 1; i <= 12; i = i * 2)
+
+        // Pre3 assignment starts here
+
+        Random randomGenerator = new Random();
+        int magicNumber = randomGenerator.Next(1, 101);
+
+
+        int guessNumber = -1;
+
+        do
         {
-            Console.WriteLine(i);
-        }
+            Console.Write("What is guess number? ");
+            guessNumber = int.Parse(Console.ReadLine());
+
+            if (magicNumber > guessNumber)
+            {
+                Console.WriteLine("Higher");
+            }
+
+            else if (magicNumber < guessNumber)
+            {
+                Console.WriteLine("Lower");
+            }
+
+            else
+            {
+                Console.WriteLine("You guessed it, congratulions!");
+            }
+        } while (magicNumber != guessNumber);
     }
 }
