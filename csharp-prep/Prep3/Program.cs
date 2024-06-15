@@ -6,11 +6,8 @@ class Program
     {
         Console.WriteLine("Hello Prep3 World!");
 
-        // Pre3 assignment starts here
-
         Random randomGenerator = new Random();
         int magicNumber = randomGenerator.Next(1, 101);
-
 
         int guessNumber = -1;
 
