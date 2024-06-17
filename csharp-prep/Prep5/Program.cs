@@ -29,7 +29,7 @@ class Program
 
     static int PromptUserNumber()
     {
-        Console.Write("What's your favorite number?");
+        Console.Write("What's your favorite number? ");
         int number = int.Parse(Console.ReadLine());
         return number;
     }
