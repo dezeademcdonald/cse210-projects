@@ -15,14 +15,8 @@ public class Journal
 
     public void Display()
     {
-
-        foreach (Entry e in _entries)
-        {
-            Entry entry = new Entry();
-            if (e.ToString() == entry._date && e.ToString() == entry._promptText && e.ToString() == entry._entryText)
-                entry.Display();
-        }
-        //entry.Display();
+        Entry entry = new Entry();
+        entry.Display();
     }
 
     public void SaveToFile(string file)
